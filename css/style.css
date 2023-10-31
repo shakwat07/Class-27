@@ -1,0 +1,188 @@
+/* ==========Common Css Starts========== */
+body {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: var(--primary-color);
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1140px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+:root {
+  --primary-color: #eee;
+  --secondary-color: #222;
+  --button-color: #fb0d0d;
+  --primary-gradient: linear-gradient(95deg, #fc0 -21.46%, #fff5cb 112.13%);
+  --secondary-gradient: linear-gradient(159deg, #fc0 3.12%, #ffe476 94.59%);
+}
+:root.dark {
+  --primary-color: #222;
+  --secondary-color: #eee;
+}
+.link_button {
+  background-color: #ffffff;
+  font-weight: 500;
+  color: #121212;
+  font-size: 20px;
+  line-height: 180%;
+  padding: 16px 18px;
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+  text-transform: capitalize;
+  margin: 45px 40px 45px 0;
+  transition: 0.4s;
+  display: inline-block;
+}
+.link_button i {
+  margin-left: 11px;
+}
+.link_button:hover {
+  background: var(--button-color);
+  color: #ffffff;
+  padding: 16px 45px;
+  border: none;
+}
+.hide{
+  opacity: 0;
+  visibility: hidden;
+}
+/* ==========Common Css Ends========== */
+/* ==========Primary Nav Css Starts========== */
+
+#primary_nav {
+  width: 300px;
+  background-color: var(--secondary-color);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: .4s;
+}
+#primary_nav aside ul li a {
+  font-size: 18px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  padding: 30px 22px;
+  display: inline-block;
+  position: relative;
+}
+#primary_nav aside ul li a::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid var(--primary-color);
+  width: 250px;
+  bottom: 0;
+  left: 0;
+  transform: scale(0);
+  transition: 0.4s;
+}
+#primary_nav aside ul li a:hover::after {
+  transform: scale(1);
+}
+.menu_button {
+  cursor: pointer;
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  font-size: 15px;
+  padding: 5px 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px solid;
+}
+.top_header {
+  position: relative;
+}
+/* ==========Primary Nav Css Ends========== */
+
+/* ==========View Area Css Starts========== */
+#view_area {
+  margin: 65px 0;
+}
+#view_area .view_area_cnt img {
+  margin: 0 40px;
+}
+#view_area .view_area_cnt h6 {
+  color: var(--secondary-color);
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+#view_area .view_area_cnt h1 {
+  color: var(--secondary-color);
+  font-family: 700;
+  font-size: 64px;
+  margin-bottom: 25px;
+}
+#view_area .view_area_cnt p {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 180%;
+}
+
+#view_area .view_area_cnt #view_area_list {
+  font-weight: 500;
+  line-height: 180%;
+  font-size: 22px;
+  margin-top: 21px;
+  color: var(--secondary-color);
+}
+#view_area .view_area_cnt #view_area_list a i {
+  color: #121212;
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  background: #f4f3f3;
+  border: 1px solid var(--secondary-color);
+}
+#view_area .view_area_cnt #view_area_list a i:hover{
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+#view_area .view_area_cnt #view_area_list :nth-child(2) {
+  margin-left: 32px;
+}
+#view_area .view_area_cnt #view_area_list .follow {
+  margin-left: -35px;
+}
+#view_area .view_area_image {
+  transform: translateX(105px);
+}
+/* ==========View Area Css Ends========== */
+.theme_button {
+  border: none;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  position: absolute;
+  top: -30px;
+  right: 60px;
+  border-radius: 5px solid;
+  font-size: 15px;
+  padding: 5px 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.theme_button:hover {
+  cursor: pointer;
+}
